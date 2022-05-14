@@ -1,0 +1,33 @@
+{
+  "name": "agisoft-cloud-api",
+  "version": "1.0.0",
+  "description": "Agisoft Cloud API",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zakhar-Petrov/agisoft-cloud-api.git"
+  },
+  "keywords": [
+    "agisoft-cloud",
+    "agisoft"
+  ],
+  "author": "Zakhar Petrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zakhar-Petrov/agisoft-cloud-api/issues"
+  },
+  "homepage": "https://github.com/Zakhar-Petrov/agisoft-cloud-api#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
