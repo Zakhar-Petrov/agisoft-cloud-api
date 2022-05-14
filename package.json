@@ -1,0 +1,25 @@
+{
+  "name": "ac-api",
+  "version": "1.0.0",
+  "description": "Agisoft Cloud API",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "agisoft-cloud",
+    "agisoft"
+  ],
+  "author": "Zakhar Petrov",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  }
+}
