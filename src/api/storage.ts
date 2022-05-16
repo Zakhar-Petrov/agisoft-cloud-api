@@ -84,23 +84,6 @@ export const StorageApiFp = function (configuration?: Configuration) {
 };
 
 /**
- * StorageApi - factory interface
- * @export
- */
-export const StorageApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    return {
-        /**
-         * Returns storage info
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getStorage(options?: any): AxiosPromise<Storage> {
-            return StorageApiFp(configuration).getStorage(options).then((request) => request(axios, basePath));
-        },
-    };
-};
-
-/**
  * StorageApi - object-oriented interface
  * @export
  * @class StorageApi

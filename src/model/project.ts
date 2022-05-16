@@ -163,3 +163,49 @@ export interface ProjectsPage extends BasePage {
      */
     projects: Array<ProjectInfo>;
 }
+
+/**
+ *
+ * @export
+ * @interface SharedProjectsPage
+ */
+export interface SharedProjectsPage extends BasePage {
+    /**
+     *
+     * @type {Array<SharedProjectInfo>}
+     * @memberof SharedProjectsPage
+     */
+    projects: Array<SharedProjectInfo>;
+}
+
+/**
+ *
+ * @export
+ * @interface SharedProjectInfo
+ */
+export interface SharedProjectInfo {
+    /**
+     * Project ID
+     * @type {string}
+     * @memberof SharedProjectInfo
+     */
+    uid: string;
+    /**
+     * Project name
+     * @type {string}
+     * @memberof SharedProjectInfo
+     */
+    name: string;
+    /**
+     * Owner UUID
+     * @type {string}
+     * @memberof SharedProjectInfo
+     */
+    ownerUid: string;
+    /**
+     * Project access key
+     * @type {string}
+     * @memberof SharedProjectInfo
+     */
+    accessKey: string;
+}
