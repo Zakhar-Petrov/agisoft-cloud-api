@@ -34,7 +34,7 @@ export const StorageApiAxiosParamCreator = function (configuration?: Configurati
             // oauth required
             if (configuration && configuration.accessToken) {
                 const localVarAccessTokenValue = typeof configuration.accessToken === 'function'
-                    ? await configuration.accessToken('oauth2', ['write'])
+                    ? await configuration.accessToken('oauth2', ['read'])
                     : await configuration.accessToken;
                 localVarHeaderParameter['Authorization'] = 'Bearer ' + localVarAccessTokenValue;
             }
